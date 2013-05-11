@@ -45,7 +45,7 @@ const float dt = 0.01;                // delta time; loop time in seconds
 // then fine-tuned based on observations. Let ku = 6.7, tu = 0.2
 const float kp = 1.35;                // proportional gain
 const float ki = 13.4;                // integral gain
-const float kd = 0.04893;               // derivative gain
+const float kd = 0.04893;             // derivative gain
 
 // The bot does not have a perfect 50/50 weight distribution. tilt_offset
 // compensates for this by modifying the initial error value by a few degrees.
