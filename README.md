@@ -2,7 +2,7 @@
 Code and resources for "BalanaceBot", an Arduino-powered two-wheel balancing robot.
 
   * Project page: <http://rogerignazio.com/projects/balancebot>
-  * Code and resources: <https://github.com/rji/balancebot>
+  * Code: <https://github.com/rji/balancebot>
 
 ## Hardware
   * Arduino Uno
@@ -15,7 +15,7 @@ Code for this project was developed and tested using the Arduino IDE, version 1.
 
 The accuracy of the angle calculation is improved with a complementary filter.
 
-Motor output is calculated using a PID controller.
+Motor output is calculated using a PID controller. Loop tuning was accomplished using (mostly) the Ziegler-Nichols method, with minor corrections to the values based on observations. To tune, modify the constants `kp`, `ki`, and `kd`.
 
 ## Additional Reading
 Colton, Shane. _[The Balance Filter: A Simple Solution for Integrating Accelerometer and Gyroscope Measurements for a Balancing Platform](http://web.mit.edu/scolton/www/filter.pdf)_. Accessed May 2013.
