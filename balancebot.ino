@@ -41,11 +41,15 @@ const float acc_volt = 3.3;           // ADXL335 operating voltage
 const float acc_sens = 0.33;          // ADXL335 sensitivity: 330 mV/g
 const float dt = 0.01;                // delta time; loop time in seconds
 
-// PID tuning ... mostly followed the Ziegler-Nichols method
-// then fine-tuned based on observations. Let ku = 6.7, tu = 0.2
-const float kp = 1.35;                // proportional gain
-const float ki = 13.4;                // integral gain
-const float kd = 0.04893;             // derivative gain
+// PID tuning ... mostly followed the Ziegler-Nichols method for Classic PID.
+// Note: this isn't perfect, and I don't have LabView or MATLAB to
+// be able to improve it. I think it's a pretty good starting point though.
+//
+// Let ultimate gain 'Ku = 10', oscillation period 'Tu = 0.2'
+// Kp = 0.6 * Ku;  Ki = 2 * Kp / Tu;  Kd = Kp * Tu / 8
+const float kp = 6;                   // proportional gain
+const float ki = 600;                 // integral gain
+const float kd = 0.015;               // derivative gain
 
 // The bot does not have a perfect 50/50 weight distribution. tilt_offset
 // compensates for this by modifying the initial error value by a few degrees.
