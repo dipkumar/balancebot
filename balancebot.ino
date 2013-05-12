@@ -45,7 +45,7 @@ const float dt = 0.01;                // delta time; loop time in seconds
 // Note: this isn't perfect, and I don't have LabView or MATLAB to
 // be able to improve it. I think it's a pretty good starting point though.
 //
-// Let ultimate gain 'Ku = 10', oscillation period 'Tu = 0.2'
+// Let ultimate gain 'Ku = 10', oscillation period 'Tu = 0.02'
 // Kp = 0.6 * Ku;  Ki = 2 * Kp / Tu;  Kd = Kp * Tu / 8
 const float kp = 6;                   // proportional gain
 const float ki = 600;                 // integral gain
