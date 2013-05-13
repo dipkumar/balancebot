@@ -1,5 +1,5 @@
 # BalanceBot
-Code and resources for "BalanaceBot", an Arduino-powered two-wheel balancing robot.
+Code and resources for "BalanceBot", an Arduino-powered two-wheel balancing robot.
 
   * Project page: <http://rogerignazio.com/projects/balancebot>
   * Code: <https://github.com/rji/balancebot>
